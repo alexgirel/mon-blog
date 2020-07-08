@@ -1,15 +1,18 @@
-class Post {
+export class Post {
     
     titrePost: string;  
     contenuPost: string;  
     loveIts: number;  
     created_at: Date;
   
-    constructor() {
+    constructor(titre: string, contenu: string, loveIts: number) {
+      this.titrePost = titre;
+      this.contenuPost = contenu;
+      this.loveIts = loveIts;
       this.created_at = new Date();
     }
   
-    getDateCreation() {
+    public getDateCreation() {
       return this.created_at;
     }
   }
