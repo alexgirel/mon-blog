@@ -1,9 +1,6 @@
 <h1>Posts</h1>
 <ul class="list-group">
     <app-post-list-item *ngFor="let post of listPosts"
-                        [post.titrePost] = "post.titrePost"
-                        [post.contenuPost] = "post.contenuPost"  
-                        [post.loveIts] = "post.loveIts"  
-                        [post.created_at] = "post.created_at">
+                        [post] = "post">
     </app-post-list-item>
 </ul>
