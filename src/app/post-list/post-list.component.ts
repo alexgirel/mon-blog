@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { PostListItemComponent } from '../post-list-item/post-list-item.component';
 import { Post } from '../post-list-item/post';
 
 @Component({
