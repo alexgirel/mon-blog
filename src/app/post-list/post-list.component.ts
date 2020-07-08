@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PostListItemComponent } from '../post-list-item/post-list-item.component';
 import { Post } from '../post-list-item/post';
 
 @Component({
@@ -10,7 +11,9 @@ export class PostListComponent implements OnInit {
   
   listPosts: Post[] = [
     new Post("Mon premier post", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",  0 ),
-    /*"1": {titrePost: 'Mon premier post', contenuPost: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor', loveIts: 0, created_at: Post.getDateCreation() }
+    new Post("Mon deuxième post", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",  5 ),
+    new Post("Mon troisième post", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",  -4 )
+    /*
   ];
   
      /* titrePost: 'Mon premier post',
