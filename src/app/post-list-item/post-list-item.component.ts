@@ -9,12 +9,21 @@ import { Post } from './post';
 export class PostListItemComponent implements OnInit {
 
   @Input() post: Post;
-  @Input() btnLoveIt: number;
-  @Input() btnDontLoveIt: number;
+  btnLoveIt: number = 0;
   
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onLoveIt() {
+    this.btnLoveIt++;
+    this.post.loveIts = this.btnLoveIt;
+  }
+
+  onDontLoveIt() {
+    this.btnLoveIt--;
+    this.post.loveIts = this.btnLoveIt;
   }
 
 }

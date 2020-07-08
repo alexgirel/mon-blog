@@ -10,9 +10,9 @@ import { Post } from '../post-list-item/post';
 export class PostListComponent implements OnInit {
   
   listPosts: Post[] = [
-    new Post("Mon premier post", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",  0 ),
-    new Post("Mon deuxième post", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",  5 ),
-    new Post("Mon troisième post", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",  -4 )
+    new Post("Mon premier post", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporrem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporrem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor" ),
+    new Post("Mon deuxième post", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporrem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporrem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor" ),
+    new Post("Mon troisième post", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporrem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporrem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor" )
   ];
 
   constructor() { }
