@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Post } from '../post-list-item/post';
 
 @Component({
@@ -7,16 +7,13 @@ import { Post } from '../post-list-item/post';
   styleUrls: ['./post-list.component.scss']
 })
 export class PostListComponent implements OnInit {
-  
-  listPosts: Post[] = [
-    new Post("Mon premier post", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporrem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporrem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor" ),
-    new Post("Mon deuxième post", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporrem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporrem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor" ),
-    new Post("Mon troisième post", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporrem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporrem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor" )
-  ];
+
+  @Input() listPosts: Post[];
 
   constructor() { }
 
   ngOnInit(): void {
+    this.listPosts;
   }
 
 }
