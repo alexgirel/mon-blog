@@ -9,7 +9,6 @@ import { Post } from './post';
 export class PostListItemComponent implements OnInit {
 
   @Input() post: Post;
-  btnLoveIt: number = 0;
   
   constructor() { }
 
@@ -17,13 +16,11 @@ export class PostListItemComponent implements OnInit {
   }
 
   onLoveIt() {
-    this.btnLoveIt++;
-    this.post.loveIts = this.btnLoveIt;
+    this.post.loveIts++;
   }
 
   onDontLoveIt() {
-    this.btnLoveIt--;
-    this.post.loveIts = this.btnLoveIt;
+    this.post.loveIts--;
   }
 
 }
