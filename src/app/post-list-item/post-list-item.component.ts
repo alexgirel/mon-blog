@@ -17,8 +17,9 @@ export class PostListItemComponent implements OnInit {
   }
 
   onLoveIt() {
-    this.btnLoveIt++;
-    this.post.loveIts = this.btnLoveIt;
+    //this.btnLoveIt++;
+    //this.post.loveIts = this.btnLoveIt;
+    this.post.loveIts++;
   }
 
   onDontLoveIt() {
